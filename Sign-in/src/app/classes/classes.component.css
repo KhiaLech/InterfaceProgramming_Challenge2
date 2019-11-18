@@ -1,0 +1,18 @@
+.ClassesComp {
+    border-style: dashed;
+    border-color: red;
+    border-width: 2px;
+    padding: .5cm;
+    margin-bottom: 5px;
+}
+
+.classContainer {
+    padding: .5cm;
+    border-style:solid;
+    border-width: 1px;
+    margin-bottom: 3px;
+}
+
+.ViewAtt {
+    right: 5cm;
+}

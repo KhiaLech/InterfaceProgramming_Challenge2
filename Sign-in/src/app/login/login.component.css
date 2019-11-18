@@ -1,0 +1,7 @@
+.LoginComp {
+    border-style: dashed;
+    border-color: red;
+    border-width: 2px;
+    padding: .5cm;
+    margin-bottom: 5px;
+}
