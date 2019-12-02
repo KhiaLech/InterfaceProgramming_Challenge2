@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
+import {FetchClassService} from './fetch-class.service';
+import { AClass, ClassesResponse } from './Classes';
 
 
 @Component({
@@ -8,4 +10,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Sign-in';
+
+  constructor(public fetchclassService: FetchClassService){}
+
+  OnInit(){
+    this.fetchclassService.fetchClasses();
+  }
 }
+
+
+

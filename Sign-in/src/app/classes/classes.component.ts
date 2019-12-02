@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FetchClassService } from '../fetch-class.service';
+import { AClass, ClassesResponse } from '../Classes';
+import { FetchAttendanceService } from '../fetch-attendance.service';
 
 @Component({
   selector: 'app-classes',
@@ -8,7 +10,8 @@ import { FetchClassService } from '../fetch-class.service';
 })
 export class ClassesComponent implements OnInit {
 
-  constructor(public fetchclassService: FetchClassService) { }
+  constructor(public fetchclassService: FetchClassService,
+    public fetchattendanceService : FetchAttendanceService) { }
 
   ngOnInit() {
   }

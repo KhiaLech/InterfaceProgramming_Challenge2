@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FetchAttendanceService } from '../fetch-attendance.service';
 
 @Component({
   selector: 'app-attendance',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AttendanceComponent implements OnInit {
 
-  constructor() { }
+  constructor( public fetchattendanceService : FetchAttendanceService) { }
 
   ngOnInit() {
   }

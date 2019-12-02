@@ -1,5 +1,9 @@
 <div class="LoginComp">
-    <h1>Login</h1>
-    <p>Api Secret: <input placeholder="secret"></p>
-    <button type="submit">Save</button>
+        <div>
+                <h1>Login</h1>
+              </div>
+              <div>
+                <p>Api Secret: <input #secret/></p>
+              </div>
+              <div><button (click)="save(secret.value); secret.value=' '">Save</button></div>
 </div>

@@ -2,26 +2,11 @@
     <h1>Attendance</h1>
     <button type="refresh">Refresh</button>
 
+<li *ngFor="let attendance of fetchattendanceService.attendance">{{attendance.firstname}} {{attendance.lastname}}, {{attendance.status}}, {{attendance.id}}</li>
+
     <hr>
 
-    <table>
-        <tr>
-            <th>Name</th>
-            <th>Status</th>
-            <th>StudentID</th>
-        </tr>
-        <tr>
-            <td>Test</td>
-            <td>Test</td>
-            <td>Test</td>
-        </tr>
-        <tr>
-                <td>Test</td>
-                <td>Test</td>
-                <td>Test</td>
-                
-            </tr>
-    </table>
+
 
 
 </div>

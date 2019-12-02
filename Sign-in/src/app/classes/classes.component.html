@@ -1,16 +1,17 @@
 <div class="ClassesComp">
     <h1>Classes</h1>
-    <button>Fetch Classes</button>
+    <button (click)="fetchclassService.fetchClasses()">Fetch Classes</button>
+
+    <ul>
+        <li *ngFor="let classes of fetchclassService.classes">
+            <div>{{classes.name}} </div>
+            <button (click)="fetchattendanceService.fetchAttendance()">View Attendance</button>
+           
+        </li>
+    </ul>
 
     <hr>
 
-    <div class="classContainer">
-        <h2>Interface Programming</h2>
-        <button class="ViewAtt">View Attendance</button>
-    </div>
-
-    <div class="classContainer">
-        <h2>OO Programming</h2>
-        <button class="ViewAtt">View Attendance</button>
-    </div>
 </div>
+
+
